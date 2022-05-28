@@ -1,0 +1,11 @@
+.p-one {
+    display: inline;
+}
+
+.p-two {
+    display: block;
+}
+
+.p-three {
+    display: inline-block;
+}

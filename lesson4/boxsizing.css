@@ -1,0 +1,20 @@
+div {
+    /* default box sizing behaviour: margin+border+padding+width */
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    
+    /* padding-box: padding is included in the width property
+     * i.e. if padding is set to  10px, and width to 400px,
+       total effective width is 400px, with actual "width"
+       being 390px;
+     * 
+     * As padding increases, size of content inside shrinks
+     * proportionately.
+     */
+    box-sizing: padding-box; 
+    /* oh btw don't use, deprecated (could they have not told me sooner?) */
+
+    /* border-box: like padding-box, but also includes border */
+    box-sizing: border-box;
+}

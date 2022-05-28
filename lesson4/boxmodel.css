@@ -1,0 +1,42 @@
+/* Total width of an element:
+ * margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+ */
+
+/* Total height of an element:
+ * margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
+ */
+
+div {
+    border: 6px solid #fd0;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+}
+
+/* Inline elements cannot have bottom or top margins set.
+ * Inline elements can have bottom or top padding set.
+ */
+
+/* Short hand notation can apply to margin and padding
+ *
+ */
+
+div#short-hand {
+    margin: 10px 50px; /* top bottom */
+    padding: 10px 10px 50px 50px; /* top bottom right left (clockwise) */
+}
+
+div#round-kind-of {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 10px 10px 0px 10px;
+}
+
+div#football {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 75px 10px;
+}

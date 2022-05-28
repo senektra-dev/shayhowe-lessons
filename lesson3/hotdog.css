@@ -1,0 +1,8 @@
+.hotdog p {
+    background: brown;
+}
+
+/* [prequalifier] [key selector] { [property]: [property value] } */
+.hotdog .mustard {
+    background: yellow;
+}
