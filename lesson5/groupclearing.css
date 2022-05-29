@@ -1,0 +1,48 @@
+/* Instead of clearing the footer, we can contain our section and aside
+   within a div classed as group. However, floating the section and aside
+   within our container will have their contents overflowing our container,
+   thus we use the ::after pseudo-element on our container to fix height.
+
+   Otherwise known as, a clearfix.
+*/
+.group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.group {
+    clear: both; /* Clear elements above our container */
+    *zoom: 1; /* Browser compatibility */
+}
+
+code {
+    background: #2db34a;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    font: 14px/24px "Source Code Pro";
+    padding: 24px 15px;
+    text-align: center;
+}
+
+header,
+section,
+aside,
+footer {
+    margin: 0 1.5% 24px 1.5%;
+}
+
+section {
+    float: left;
+    width: 63%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+footer {
+    margin-bottom: 0;
+}

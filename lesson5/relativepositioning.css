@@ -1,0 +1,45 @@
+/* Relative positioning preserves flow of element, but allows usage of
+   offset properties to move the element independently.
+*/
+
+code {
+  color: #666;
+  font: 14px/24px "Source Code Pro";
+}
+
+div,
+.offset code {
+  border-radius: 6px;
+}
+
+div {
+  background: #eaeaed;
+  height: 62px;
+  padding-top: 38px;
+  text-align: center;
+  width: 100px;
+}
+
+.offset {
+  background: none;
+  border: 2px dashed #9799a7;
+  height: 100px;
+  padding: 0px;
+}
+
+.offset code {
+  background: teal;
+
+  color: #fff;
+  text-align: center;
+
+  display: block; /* Set code element to display block for styling. */
+  width:  100px;
+  height: 74px;
+  padding-top: 26px;
+
+  /* Offset code block 20px from the left and 20px from the top. */
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
