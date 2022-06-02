@@ -1,0 +1,64 @@
+header,
+main {
+	width: 50%;
+	max-width: 860px;
+	margin: 0 auto;
+	/* Line height is used to set the space between two lines of height, or also
+     known as leading. A value of 1.5 that of font-size is a best a practive.
+     But with baseline grids, a bit more control with pixels is preferable.
+  */
+	line-height: 1.5;
+	/* You can also use line-height to center text vertically by setting it to
+     the containing element's height. See 'p#europe'.
+  */
+}
+
+h1,
+h3 {
+	/* Font color */
+	color: #333f;
+	/* Tries font going from left to right. */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	/* Size of font. Can be pixels, em, percents, points. */
+	font-size: 42px;
+}
+
+p {
+	font-family: Arial;
+}
+
+span {
+	/* Font style accepts normal, italic, oblique and inhert. */
+	font-style: oblique;
+}
+
+span.firm {
+	font-style: normal;
+	/* Set font to small capitals with variant. */
+	font-variant: small-caps;
+}
+
+p#europe {
+	display: block;
+	height: 80px;
+	background: #dfdfdf;
+
+	/* Set text to vertical align with container */
+	line-height: 80px;
+}
+
+p#random-text {
+	/* Shorthand for font properties.
+     stye variant size/line-height weight family
+  */
+	font: normal small-caps bold 14px/1.5 Helvetica;
+}
+
+span#wut {
+	width: auto;
+	/* Use font weight for bolding. */
+	font-weight: bold;
+}
