@@ -1,0 +1,73 @@
+header,
+main {
+	width: 50%;
+	max-width: 860px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+h1,
+h3 {
+	color: #333f;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+p {
+	font-family: Arial;
+}
+
+span {
+	font-style: oblique;
+}
+
+span.firm {
+	font-style: normal;
+	font-variant: small-caps;
+	/* Text shadow adds a shadow to text.
+     horizontal-offset vertical-offset shadow-blur-radius shadow-color
+  */
+	text-shadow: 6px 6px 2px darkgray;
+}
+
+p#europe {
+	display: block;
+	height: 80px;
+	background: #dfdfdf;
+
+	/* Text align lets you align left, right, center, justify or inherit */
+	text-align: center;
+	line-height: 80px;
+}
+
+p#random-text {
+	font: normal small-caps bold 14px/1.5 Helvetica;
+}
+
+span#wut {
+	width: auto;
+	font-weight: bold;
+
+	/* Text-decoration allows us to use decorations such as underline,
+     line-through, wavy, etc.
+  */
+	text-decoration: underline;
+}
+
+p#random-text-2 {
+	/* Text-transform changes text in place.
+     Accepts none, capitalize, uppercase, lowercase and inherit.
+  */
+	text-transform: uppercase;
+
+	/* Letter-spacing determines space between letters. Best to use a relative
+     unit. None will reset to default value.
+  */
+	letter-spacing: -0.1em;
+
+	/* Word-spacing is similar to letter-spacing but works on words. */
+	word-spacing: 1em;
+}
