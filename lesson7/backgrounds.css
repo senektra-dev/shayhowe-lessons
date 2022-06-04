@@ -1,9 +1,4 @@
-#bg-div-1,
-#bg-div-2,
-#bg-div-3,
-#bg-div-4,
-#bg-div-5,
-#bg-div-6 {
+div {
 	width: 500px;
 	height: 200px;
 	margin-bottom: 10px;
