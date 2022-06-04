@@ -3,6 +3,9 @@
    License: none (public domain)
 */
 
+/* Font  Imports ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
 html,
 body,
 div,
@@ -173,10 +176,9 @@ table {
 }
 
 /* Typography --------------------------------------------------------------- */
-
 body {
 	color: #888;
-	font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -278,6 +280,7 @@ p a {
 
 .hero p {
 	font-size: 24px;
+	font-weight: 100;
 }
 
 /* Navigation --------------------------------------------------------------- */
@@ -290,6 +293,9 @@ p a {
 
 .logo {
 	font-size: 48px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: .5px;
 	line-height: 44px;
 
 	border-top: 4px solid #648880;
