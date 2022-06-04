@@ -1,0 +1,52 @@
+#bg-div-1,
+#bg-div-2,
+#bg-div-3,
+#bg-div-4,
+#bg-div-5,
+#bg-div-6 {
+	width: 500px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+/* The background property is shorthand and can be used to apply color or image
+   backgrounds. The background-color property is used for adding colored
+   backgrounds only.
+*/
+#bg-div-1 {
+	background-color: #b2b2b2;
+}
+
+/* You can use a transparent background with rgba and hsla. Make sure to declare
+   a fall back color as older browsers may not support an alpha.
+*/
+#bg-div-2 {
+	background-color: #b2b2b2;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+/* Background-image is used for images. */
+#bg-div-3 {
+	background-image: url("__ch_en_hoshiguma_and_swire_arknights_drawn_by_wattaro__sample-ef353873565ceb8773ee7cbbfe17a310.jpg");
+	/* Image-repeat can used to tile vertically or horizontally */
+	/* It accepts: repeat, repeat-x, repeat-y and no-repeat */
+	background-image: no-repeat;
+
+	/* We can position a background using background-position */
+	/* background-position: horizontal-offset vertical-offset */
+	background-position: 100px 20px;
+}
+
+#bg-div-4 {
+	background-image: url("__ch_en_hoshiguma_and_swire_arknights_drawn_by_wattaro__sample-ef353873565ceb8773ee7cbbfe17a310.jpg");
+
+	/* We can also position with right left top bottom offsets */
+	background-position: right bottom;
+}
+
+#bg-div-5 {
+	/* Using shorthand, we can combine the following properties:
+     background-color background-image background-position background-repeat
+  */
+	background: #b2b2b2 url("face_avie.jpg") 20px 10px no-repeat;
+}
