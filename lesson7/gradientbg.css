@@ -1,0 +1,52 @@
+/* Gradient backgrounds */
+
+div {
+	width: 500px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+#div-1 {
+	background: #466368;
+	/* By default, gradients move from top to bottom. */
+	background: linear-gradient(#466368, #293f50);
+}
+
+#div-2 {
+	background: #466368;
+	/* Moves gradient from top left to bottom right. */
+	background: linear-gradient(to right bottom, #466368, #293f50);
+}
+
+#div-3 {
+	background: #466368;
+	/* We can also use degrees. */
+	background: linear-gradient(45deg, #466368, #293f50);
+}
+
+#div-4 {
+	background: #466368;
+	/* A radial background gradient. First color is inner, second outer. */
+	background: radial-gradient(#466368, #293f50);
+}
+
+#div-5 {
+	background: #466368;
+	/* 
+    You can define color stops. Gradients are placed equally in space if no
+    specific stop position is set.
+  */
+	background: radial-gradient(#466368, #f6f1d3 35%, #293f50);
+}
+
+.notice-success {
+	width: auto;
+	height: auto;
+	background: #67b11c;
+	background: linear-gradient(#72c41f, #5c9e19);
+	border: 2px solid #467813;
+	border-radius: 5px;
+	color: #fff;
+	font-family: "Helvetica Neue";
+	padding: 15px 20px;
+}
