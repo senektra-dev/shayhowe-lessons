@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+div {
+	border: 2px dashed #9799a7;
+	height: 500px;
+	width: 500px;
+	margin-bottom: 10px;
+}
+
+.d1 {
+	background: url('face_avie.jpg') 0 0 no-repeat;
+	/* Set to 75% height of element while preserving aspect ratio */
+	background-size: auto 25%;
+	border: 2px dashed #9799a7;
+	height: 500px;
+	width: 500px;
+}
+
+.d2 {
+	background: url('face_avie.jpg') 0 0 no-repeat;
+	/* Cover will stretch the image while preserving aspect ratio */
+	background-size: cover;
+}
+
+.d3 {
+	background: url('__ch_en_hoshiguma_and_swire_arknights_drawn_by_wattaro__sample-ef353873565ceb8773ee7cbbfe17a310.jpg')
+		0 50% no-repeat;
+	/* Contain will shrink image while preserving aspect ratio. */
+	background-size: contain;
+}
+
+.d4 {
+	background: url('face_avie.jpg') 0 0 no-repeat;
+	background-size: cover;
+	padding: 200px;
+	/* Sets where background will begin from */
+	background-origin: content-box;
+	/* background-clip can be used to clip background into border */
+}
