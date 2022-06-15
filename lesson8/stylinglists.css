@@ -1,0 +1,40 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set a style for list items */
+#list-1 {
+	list-style-type: kannada;
+}
+
+/* Use an image for lists */
+#list-2 {
+	list-style-image: url('kobo_by_snowmya.png');
+	/* Move li marker inline with text */
+	/* Allow content to wrap below marker */
+	list-style-position: inside;
+}
+
+#list-3 {
+	/* Shorthand */
+	list-style: circle inside;
+}
+
+#list-4 li {
+	/* Setting lists to inline will remove markers */
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#list-5 li {
+	/* Floating will preserve markers */
+	float: left;
+	/* Use margin to prevent overlap */
+	margin: 0 20px;
+}
+
+#list-5::after {
+	content: "";
+	display: block;
+	clear: both;
+}
