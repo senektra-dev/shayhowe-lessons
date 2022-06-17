@@ -1,0 +1,24 @@
+#img-1-2 {
+	height: 200px;
+	width: 200px;
+}
+
+#img-2-1 {
+	height: 600px;
+	width: 600px;
+}
+
+#img-3-1 {
+	height: 400px;
+	width: 400px;
+	display: block;
+}
+
+.container {
+	max-width: 500px;
+}
+
+#img-4-1 {
+	float: right;
+	width: 20%;
+}
