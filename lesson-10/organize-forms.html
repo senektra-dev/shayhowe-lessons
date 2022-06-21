@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizing Form Elements</title>
+</head>
+<body>
+  <!-- Labels allow you to provide captions or headings for inputs -->
+
+  <!-- Tie labels and inputs with the for and id attributes respectively -->
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username">
+  
+  <br>
+  <!-- Labels can wrap inputs to omit the for and id -->
+  <label>
+    <input type="radio" name="day" value="friday" checked>Friday
+  </label>
+  <label>
+    <input type="radio" name="day" value="Saturday" checked>Saturday
+  </label>
+  <label>
+    <input type="radio" name="day" value="Sunday" checked>Sunday
+  </label>
+
+  <br>
+  <!-- Fieldsets can be used to wrap together labels and form controls -->
+  <fieldset>
+    <!-- Use a legend to describe a fieldset -->
+    <legend>Login</legend>
+    <label>
+      Username
+      <input type="text" name="username">
+    </label>
+    <label>
+      Password
+      <input type="text" name="password">
+    </label>
+  </fieldset>
+</body>
+</html>
