@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Gantari&family=Inconsolata&family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  /* color: #ff3270;  */
+  color: white;
+  font-family: Gantari;
+}
+
+table {
+  /* Use border collapse to set how borders of cells and the table behave */
+  border-collapse: collapse;
+  /* The following two properties would add spacing between cells */
+  /* border-collapse: separate;
+  border-spacing: 4px 8px; */
+  width: 50%;
+  margin: 1rem auto 0 auto;
+}
+
+table caption {
+  padding: 0.5rem 0.7rem;
+}
+
+th,
+td {
+  border: 1px solid #ff3270; 
+  /* The following code adds a border to the bottom of each cell */
+  /* border-bottom: 1px solid #ff3270;  */
+  padding: 0.5rem 0.7rem;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #ff3270;
+  color: black;
+  font-size: 1.1rem;
+}
+
+/* Specify the last row to not have a border bottom */
+/* tfoot tr:last-child td {
+  border-bottom: none;
+} */
+
+.book-title {
+  font-family: 'DM Mono', monospace;
+  font-weight: bold;
+  color: #ff3270;
+  display: block;
+}
+
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+
+.item-price {
+  text-align: right;
+}
+
+tfoot {
+  text-align: right;
+}
+
+tfoot tr:last-child {
+  background-color: #ff3270;
+  color: black;
+  font-size: 1.1rem;
+} 
+
